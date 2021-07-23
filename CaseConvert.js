@@ -10,6 +10,7 @@ class CaseConvert {
         SENTENCE: /(\s)/g
     }
 
+    constructor(text, type) {
         this.#str = text;
         this.#pattern = type;
     }
