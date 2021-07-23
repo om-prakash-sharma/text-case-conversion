@@ -23,7 +23,7 @@ caseObj.toSentence(); // output : "Hello World By Js"
 
 ```js
 
-const  caseObj = new CaseConvert("helloWorldByJs", caseConvert.TYPE.CAMEL_CASE);
+const  caseObj = new CaseConvert("helloWorldByJs", CaseConvert.TYPE.CAMEL_CASE);
 
 // To convert into hyphen case
 caseObj.toHyphenCase(); // output : "hello-world-by-js"
