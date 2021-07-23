@@ -1,18 +1,32 @@
 # Case convert in JS
 
 This is simple class to convert text from one case to other cases.
-> ex:  from hyphen case to camel case
+> ex:  from hyphen case to camel case, underscore case, sentence.
 
 
 ```js
 
-const  caseObj = new CaseConvert("hello-world-by-java", CaseConvert.TYPE.HYPHEN);
+const  caseObj = new CaseConvert("hello-world-by-js", CaseConvert.TYPE.HYPHEN);
 
-// to convert into camel case
-caseObj.toCamelCase(); // output : "helloWorldByJava"
+// To convert into camel case
+caseObj.toCamelCase(); // output : "helloWorldByJs"
 
-// to convert into underscore case
-caseObj.toUnderscore(); // output : "hello_world_by_java"
+// To convert into underscore case
+caseObj.toUnderscore(); // output : "hello_world_by_js"
 
-// to convert into sentence
-caseObj.toSentence(); // output : "Hello World By Java"
+// To convert into sentence
+caseObj.toSentence(); // output : "Hello World By Js"
+
+ ``` 
+ 
+ > ex:  from camel case to hyphen case, underscore case, sentence.
+
+```js
+
+const  caseObj = new CaseConvert("helloWorldByJs", caseConvert.TYPE.CAMEL_CASE);
+
+// To convert into hyphen case
+caseObj.toHyphenCase(); // output : "hello-world-by-js"
+
+ ``` 
+ 
